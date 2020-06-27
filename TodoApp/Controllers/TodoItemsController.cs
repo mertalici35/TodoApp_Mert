@@ -36,7 +36,10 @@ namespace TodoApp.Controllers
         [HttpGet("{start}")]
         public async Task<ActionResult<TodoItem>> GetTodoItem(int start)
         {
-
+            if(start < 0)
+            {
+                return NotFound();
+            }
             if (_context.TodoItems.Count() < start)
             {
                 return NotFound();
