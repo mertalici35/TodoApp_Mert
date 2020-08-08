@@ -1,4 +1,4 @@
-# TodoApp_Mert
+# TodoApp
 This  App is created by Mert Alici in response to a given recruitment task.
 You may find a brief of the task at the very end.
 
